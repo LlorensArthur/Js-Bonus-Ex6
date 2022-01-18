@@ -1,0 +1,18 @@
+#formulaire{
+    display: none;
+}
+
+.container{
+    height: 700px;
+}
+
+.lama-card{
+    width: 400px;
+    height: 600px;
+}
+
+.lama-photo{
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+}

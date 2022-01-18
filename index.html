@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  <title>E-commerce Devoir</title>
+</head>
+
+<body>
+  <!-- Main boostrap container -->
+  <div class="container">
+    <!-- Buttons div. Most of the buttons are used to change of product categories. The "Panier" button opens the modal card that displays the user's shopping cart.-->
+    <div class="buttons d-flex justify-content-center">
+    <!-- Most of the buttons are used hange of product categories.-->
+    <input type="button" class="btn btn-lg btn-primary category" name="submit" id="lama" value="Acheter un lama" />
+      <input type="button" class="btn btn-lg btn-warning category" name="submit" id="alpaca"
+        value="Acheter un alpaca" />
+      <input type="button" class="btn btn-lg btn-info category" name="submit" id="vigogne"
+        value="Acheter une vigogne" />
+    <!-- The "Panier" button opens the modal card that displays the user's shopping cart.-->
+    <button type="button" class="btn btn-lg btn-primary" id="shopping cart" data-bs-toggle="modal"
+        data-bs-target="#exampleModal" value="Accéder au panier">Panier</button>
+    </div>
+
+    <!-- Display of all the articles of a category -->
+    <div class="mt-5 row">
+      <div id="content" class="d-flex flex-wrap">
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal card - Displays the user's shopping cart when they click on the button "Panier"  -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Displays shopping cart's content with interactive buttons to add or reduce the quantity of elements -->
+          <div class="shopping-cart-content">
+
+          </div>
+          <!-- Displays the total price of the shopping cart -->
+          <div class="shopping-cart-price">
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
